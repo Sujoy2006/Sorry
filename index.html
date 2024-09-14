@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://i.imgur.com/xXYzV2y.gif'); /* Cute background gif */
+            background-size: cover;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .gif-container {
+            margin: 20px 0;
+        }
+
+        .gif-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(255, 107, 107, 0.4);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3b3b;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>I'm Sorry 😔</h1>
+
+        <div class="gif-container">
+            <img src="https://media.tenor.com/Q9VuGIKQqEMAAAAj/love-bear.gif" alt="Sorry GIF">
+        </div>
+
+        <button onclick="saySorry()">Click if you forgive me 💖</button>
+
+    </div>
+
+    <script>
+        function saySorry() {
+            const container = document.querySelector('.container');
+            container.innerHTML = `
+                <h1>Yeha ! Thank you !</h1>
+                <div class="gif-container">
+                    <img src="https://media.tenor.com/r-O2xbfTEWIAAAAj/bear-dance-no-background.gif" alt="Thank You GIF">
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
